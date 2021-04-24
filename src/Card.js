@@ -4,11 +4,11 @@ import './Card.scss';
 
 function Card(props){
     return (
-        <div>
-            <h2>{props.header}</h2>
-            <p>{props.suite}</p>
-            <img className= "imageCard" src={props.img} alt={props.header}/>
-        </div>
+        <tr>
+            <td>{props.header}</td>
+            <td>{props.suite}</td>
+            <td><img className= "imageCard" src={props.img} alt={props.header}/></td>
+        </tr>
     )
 }
 

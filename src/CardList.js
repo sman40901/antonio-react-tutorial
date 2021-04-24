@@ -1,6 +1,7 @@
 import {cardsList} from './constants';
 import Card from "./Card"
 import { useState } from 'react';
+import './CardList.scss';
 
 function CardList(){
     const [cards, setCards] = useState (cardsList);
@@ -19,9 +20,14 @@ function CardList(){
     });
 
     return (
-        <>
+        <table className="mainTable">
+         <tr>
+            <th>Card</th>
+            <th>Suite</th>
+            <th>Image</th>
+         </tr>
             { cardListItem }
-        </>
+        </table>
     );
 }
 
