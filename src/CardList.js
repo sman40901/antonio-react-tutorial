@@ -7,7 +7,7 @@ function CardList(){
 
     const cardListItem = cards.map((card, index) => {
         return (
-            // Return the desired HTML for each ingredient
+            // Return the desired HTML for each card
             <>
                <Card key={index}
                     header={card.header}
